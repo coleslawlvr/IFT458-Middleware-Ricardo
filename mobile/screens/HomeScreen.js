@@ -76,7 +76,7 @@ const HomeScreen = ({ navigation }) => {
                 {/* Login button */}
                 <TouchableOpacity
                     style={styles.button}
-                    onPress={() => navigation('login')}
+                    onPress={() => navigation.navigate('Login')}
                 >
                     <Text style={styles.buttonText}>Login</Text>
                 </TouchableOpacity>
@@ -84,7 +84,7 @@ const HomeScreen = ({ navigation }) => {
                 {/* Register button */}
                 <TouchableOpacity
                     style={[styles.button, styles.buttonSecondary]}
-                    onPress={() => navigation('register')}
+                    onPress={() => navigation.navigate('Register')}
                 >
                     <Text style={styles.buttonText}>Register</Text>
                 </TouchableOpacity>
@@ -92,7 +92,7 @@ const HomeScreen = ({ navigation }) => {
                 {/* Book Exchange button */}
                 <TouchableOpacity
                     style={[styles.button, styles.buttonInfo]}
-                    onPress={() => navigation('bookExchange')}
+                    onPress={() => navigation.navigate('Books')}
                 >
                     <Text style={styles.buttonText}>Book Exchange</Text>
                 </TouchableOpacity>

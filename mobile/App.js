@@ -5,6 +5,12 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, StatusBar, Platform } from 'react-native';
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { ActivityIndicator } from 'react-native';
+import styles from './styles';
+
 // Import all screen components
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/LoginScreen';
